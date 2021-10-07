@@ -1,220 +1,220 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IEX=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
-    <header>
-        <h1>Aprendiendo Sintaxis y Selectores CSS,
-            Interacción Humano Ordenador</h1>
-    </header>
-    <hr>
-    <nav>
-        <ul>
-            <li>Inicio</li>
-            <li>Tema
-                <ul>
-                    <li>opcion 1</li>
-                    <li>opcion 2</li>
-                </ul>
-            </li>
-            <li>Recurso
-                <ul>
-                    <li>opcion 1</li>
-                    <li>opcion 2</li>
-                </ul>
-            </li>
-            <li>Aprendizaje</li>
-            <li>Acerca de</li>
-        </ul>
-    </nav>
-    <hr>
-    <!-- contenido principal de la pagina  -->
-    <main>
-        <section>
-            
-            <h4>Proposito del sitio</h4>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IEX=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+    </head>
+    <body>
+        <header>
+            <h1>Aprendiendo Sintaxis y Selectores CSS,
+                Interacción Humano Ordenador</h1>
+        </header>
+        <hr>
+        <nav>
+            <ul>
+                <li>Inicio</li>
+                <li>Tema
+                    <ul>
+                        <li>opcion 1</li>
+                        <li>opcion 2</li>
+                    </ul>
+                </li>
+                <li>Recurso
+                    <ul>
+                        <li>opcion 1</li>
+                        <li>opcion 2</li>
+                    </ul>
+                </li>
+                <li>Aprendizaje</li>
+                <li>Acerca de</li>
+            </ul>
+        </nav>
+        <hr>
+        <!-- contenido principal de la pagina  -->
+        <main>
+            <section>
+                
+                <h4>Proposito del sitio</h4>
 
-            <p>El proposito de este sitio es aprender de los temas escogidos en el foro del curso en este caso Sintaxis y Selectores CSS,
-                Interacción Humano Ordenador</p>
+                <p>El proposito de este sitio es aprender de los temas escogidos en el foro del curso en este caso Sintaxis y Selectores CSS,
+                    Interacción Humano Ordenador</p>
 
-                <article>
-                    <h4>Sintaxis y Selectores CSS,
-                        Interacción Humano Ordenador
-                        </h4>
-                        <img src="Imagen 1/sintx.png" alt="Sintaxis en imagen">
+                    <article>
+                        <h4>Sintaxis y Selectores CSS,
+                            Interacción Humano Ordenador
+                            </h4>
+                            <img src="Imagen 1/sintx.png" alt="Sintaxis en imagen">
+                        <p>
+                            <li>Sintaxis</li>  
+    La meta básica del lenguaje Cascading Style sheet (CSS) es permitir al motor del navegador pintar elementos de la página con características específicas, como colores, posición o decoración. La sintaxis CSS refleja estas metas y estos son los bloques básicos de construcción.
+
+    La propiedad que es un identificador, un nombre leíble por humanos, que define qué característica es considerada.
+
+    El valor que describe como las características deben ser manejadas por el motor. Cada propiedad tiene un conjunto de valores válidos, definido por una gramática formal, así como un significado semántico, implementados por el motor del navegador.
+
+    <li>Declaraciones de CSS</li>   
+    Configurando propiedades CSS a valores específicos es la función principal del lenguaje del CSS. Una propiedad y su valor son llamados una declaración, y cualquier motor de CSS calcula qué declaraciones aplican a cada uno de los elementos de una página para mostrarlos apropiadamente y estilizarlos.
+
+    Ambos propiedades y valores son sensibles a mayúsculas y minúsculas en CSS. El par se separa por dos puntos, ':' (U+003A COLON), y los espacios en blanco antes, entre ellos y después, pero no necesariamente dentro de ellos, son ignorados.
+
+    Hay más de 100 propiedades diferentes en CSS y cerca de un número infinito de diferentes valores. No todos los pares de propiedades y valores son permitidos cada propiedad define que valores son válidos. Cuando un valor no es válido para una propiedad específica, la declaración es considerada inválida y es completamente ignorada por el motor del CSS.
+
+    <LI>Bloques de declaraciones en CSS</LI>  
+    Las declaraciones son agrupadas en bloques, que es una estructura delimitada por una llave de apertura, '{' (U+007B LEFT CURLY BRACKET), y una de cierre, '}' (U+007D RIGHT CURLY BRACKET). Los bloques en ocasiones puedes anidarse, por lo que las llaves de apertura y cierre deben de coincidir.
+
+    Esos bloques son naturalmente llamados bloques de declaraciones y las declaraciones dentro de ellos están separadas por un punto y coma, ';' (U+003B SEMICOLON). Un bloque de declaración puede estar vacío, que es contener una declaración nula. Los espacios en blanco alrededor de las declaraciones son ignorados. En cuanto a la última declaración de un bloque, esta no necesita terminar en un punto y coma, aunque es usualmente considerado una buena práctica porque previene el olvidar agregarlo cuando se extienda el bloque con otra declaración.
+
+    <Li>Sets de reglas CSS</Li>  
+    Si cada hoja de estilos pudiera aplicar una sola declaración a cada elemento de una página web, sería algo inútil. El verdadero objetivo es aplicar varias declaraciones a distintas partes del documento.
+
+    CSS permite esto asociando condiciones con bloques de declaraciones. Cada declaración (válida) es precedida por un selector, es decir, una condición que selecciona algunos elementos de la página. El bloque que forma el par selector-declaraciones recibe el nombre de set de reglas, o simplemente una regla.
+
+    Debido a que un elemento de la página puede ser seleccionado por varios selectores, y, por lo tanto, por varias reglas que pueden contener la misma propiedad más de una vez, con diferentes valores, el estándar CSS define cuál regla tiene precedencia por sobre las otras y debe ser aplicada: esto se conoce como el algoritmo cascada.
+
+    Es importante resaltar que, si un set de reglas formado por un grupo de selectores es un atajo que reemplaza varios sets de reglas con un solo selector cada una, esto no aplica a la validez del set de reglas en sí.
+
+    Esto tiene una consecuencia importante: si algún selector básico es inválido, como cuando se usa un pseudo-elemento o pseudo-clase inválida, el selector entero es inválido y, por lo tanto, el set de reglas completo es ignorado (por ser inválido también).
+
+    <li>Declaraciones CSS</li>  
+    Los sets de reglas son los bloques principales de una hoja de estilos, que generalmente consiste en una larga lista de ellos. Pero existe otro tipo de información que el autor web puede transmitir en la hoja de estilos, como el set de caracteres, otra hoja de estilos a importar, Font fase o listar descripciones de contador, entre otros. Se usarán tipos de declaraciones específicas para esto mismo.
+
+    Una declaración es un bloque que empieza con un carácter (no espacio) y termina con la primera llave de cierre o punto y coma (fuera de una cadena, sin escape y no incluido dentro de otro par de {}. () o []).
+
+    Existen dos tipos de declaraciones:
+
+    Sets de reglas (o reglas) que, como lo visto, asocian una colección de declaraciones CSS a una condición descrita como selector.
+
+    Reglas At que inician con un símbolo '@' (U+0040 COMMERCIAL AT), seguido de un identificados y luego el resto de la declaración que finaliza con un punto y coma (;) por fuera de un bloque o al inicio del próximo bloque. Cada tipo de reglas at, definidas por un identificador, tienen su propia sintaxis interna, y semántica por supuesto. Se utilizan para establecer información de metadatos (como @charset o @import), información condicional (como @media o @document (en-US)), o información descriptiva (como @font-face).
+
+    Toda declaración que no es un set de reglas ni una regla at es considerada inválida e ignorada.
+                        </p>
+                        <P>Schulz, R. G. (2008). Diseño web con CSS. Marcombo.</P>
+                    </article>
+
+                    <article>
+                        <H4>Selectores CSS</H4>
+                        <img src="Imagen 1/sintaxis.png" alt="selectores en imagen">
                     <p>
-                        <li>Sintaxis</li>  
-La meta básica del lenguaje Cascading Style sheet (CSS) es permitir al motor del navegador pintar elementos de la página con características específicas, como colores, posición o decoración. La sintaxis CSS refleja estas metas y estos son los bloques básicos de construcción.
+                        En CSS los selectores se utilizan para delimitar los elementos HTML de nuestra página web a los que queremos aplicar estilo. Hay una amplia variedad de selectores CSS, lo que permite una gran precisión a la hora de seleccionar elementos a los que aplicar estilo. En este artículo y sus subartículos veremos con detalle todos los tipos y el modo como funcionan.
 
-La propiedad que es un identificador, un nombre leíble por humanos, que define qué característica es considerada.
+    <li>Prerrequisitos:</li>   	
+    Nociones básicas de informática, tener el software básico instalado, conocimientos básicos de trabajar con archivos, conocimientos básicos de HTML (véase Introducción a HTML) y una idea de cómo funciona el CSS (véase Primeros pasos con CSS).
 
-El valor que describe como las características deben ser manejadas por el motor. Cada propiedad tiene un conjunto de valores válidos, definido por una gramática formal, así como un significado semántico, implementados por el motor del navegador.
+    <li>Objetivo:</li>  	
+    Aprender con detalle cómo funcionan los selectores CSS.
 
-<li>Declaraciones de CSS</li>   
-Configurando propiedades CSS a valores específicos es la función principal del lenguaje del CSS. Una propiedad y su valor son llamados una declaración, y cualquier motor de CSS calcula qué declaraciones aplican a cada uno de los elementos de una página para mostrarlos apropiadamente y estilizarlos.
+    <li>¿Qué es un selector?</li>   
+    En un artículo anterior explicamos qué son los selectores. Un selector CSS es la primera parte de una regla CSS. Es un patrón de elementos y otros términos que indican al navegador qué elementos HTML se seleccionan para aplicarles una regla que incluye los valores de las propiedades CSS. El elemento o los elementos seleccionados por el selector se denominan sujeto del selector.
 
-Ambos propiedades y valores son sensibles a mayúsculas y minúsculas en CSS. El par se separa por dos puntos, ':' (U+003A COLON), y los espacios en blanco antes, entre ellos y después, pero no necesariamente dentro de ellos, son ignorados.
+    En artículos anteriores ya has visto algunos selectores y has aprendido que hay diversas maneras de organizar el documento. Por ejemplo, seleccionando un elemento, como h1, o seleccionando una clase, como 
+    .special.
 
-Hay más de 100 propiedades diferentes en CSS y cerca de un número infinito de diferentes valores. No todos los pares de propiedades y valores son permitidos cada propiedad define que valores son válidos. Cuando un valor no es válido para una propiedad específica, la declaración es considerada inválida y es completamente ignorada por el motor del CSS.
+    En CSS, los selectores se definen en la especificación de selectores de CSS correspondiente; al igual que cualquier otro elemento de CSS, es necesario que los navegadores los admitan para que funcionen. La mayoría de los selectores que encontrarás se definen en especificación de nivel 3 de selectores, que es una especificación consolidada y, por lo tanto, la mayoría de navegadores admitirán esos selectores.
 
-<LI>Bloques de declaraciones en CSS</LI>  
-Las declaraciones son agrupadas en bloques, que es una estructura delimitada por una llave de apertura, '{' (U+007B LEFT CURLY BRACKET), y una de cierre, '}' (U+007D RIGHT CURLY BRACKET). Los bloques en ocasiones puedes anidarse, por lo que las llaves de apertura y cierre deben de coincidir.
+    <li>Listas de selectores</li>   
+    Si más de un elemento utiliza el mismo CSS, puedes combinar los selectores en una lista de selectores para que la regla se aplique a cada uno de los selectores individuales. Por ejemplo, si tengo el mismo CSS para un h1 y para una clase .special, los puedo escribir como dos reglas separadas.
 
-Esos bloques son naturalmente llamados bloques de declaraciones y las declaraciones dentro de ellos están separadas por un punto y coma, ';' (U+003B SEMICOLON). Un bloque de declaración puede estar vacío, que es contener una declaración nula. Los espacios en blanco alrededor de las declaraciones son ignorados. En cuanto a la última declaración de un bloque, esta no necesita terminar en un punto y coma, aunque es usualmente considerado una buena práctica porque previene el olvidar agregarlo cuando se extienda el bloque con otra declaración.
-
-<Li>Sets de reglas CSS</Li>  
-Si cada hoja de estilos pudiera aplicar una sola declaración a cada elemento de una página web, sería algo inútil. El verdadero objetivo es aplicar varias declaraciones a distintas partes del documento.
-
-CSS permite esto asociando condiciones con bloques de declaraciones. Cada declaración (válida) es precedida por un selector, es decir, una condición que selecciona algunos elementos de la página. El bloque que forma el par selector-declaraciones recibe el nombre de set de reglas, o simplemente una regla.
-
-Debido a que un elemento de la página puede ser seleccionado por varios selectores, y, por lo tanto, por varias reglas que pueden contener la misma propiedad más de una vez, con diferentes valores, el estándar CSS define cuál regla tiene precedencia por sobre las otras y debe ser aplicada: esto se conoce como el algoritmo cascada.
-
-Es importante resaltar que, si un set de reglas formado por un grupo de selectores es un atajo que reemplaza varios sets de reglas con un solo selector cada una, esto no aplica a la validez del set de reglas en sí.
-
-Esto tiene una consecuencia importante: si algún selector básico es inválido, como cuando se usa un pseudo-elemento o pseudo-clase inválida, el selector entero es inválido y, por lo tanto, el set de reglas completo es ignorado (por ser inválido también).
-
-<li>Declaraciones CSS</li>  
-Los sets de reglas son los bloques principales de una hoja de estilos, que generalmente consiste en una larga lista de ellos. Pero existe otro tipo de información que el autor web puede transmitir en la hoja de estilos, como el set de caracteres, otra hoja de estilos a importar, Font fase o listar descripciones de contador, entre otros. Se usarán tipos de declaraciones específicas para esto mismo.
-
-Una declaración es un bloque que empieza con un carácter (no espacio) y termina con la primera llave de cierre o punto y coma (fuera de una cadena, sin escape y no incluido dentro de otro par de {}. () o []).
-
-Existen dos tipos de declaraciones:
-
-Sets de reglas (o reglas) que, como lo visto, asocian una colección de declaraciones CSS a una condición descrita como selector.
-
-Reglas At que inician con un símbolo '@' (U+0040 COMMERCIAL AT), seguido de un identificados y luego el resto de la declaración que finaliza con un punto y coma (;) por fuera de un bloque o al inicio del próximo bloque. Cada tipo de reglas at, definidas por un identificador, tienen su propia sintaxis interna, y semántica por supuesto. Se utilizan para establecer información de metadatos (como @charset o @import), información condicional (como @media o @document (en-US)), o información descriptiva (como @font-face).
-
-Toda declaración que no es un set de reglas ni una regla at es considerada inválida e ignorada.
-                    </p>
-                    <P>Schulz, R. G. (2008). Diseño web con CSS. Marcombo.</P>
-                </article>
-
-                <article>
-                    <H4>Selectores CSS</H4>
-                    <img src="Imagen 1/sintaxis.png" alt="selectores en imagen">
-                <p>
-                    En CSS los selectores se utilizan para delimitar los elementos HTML de nuestra página web a los que queremos aplicar estilo. Hay una amplia variedad de selectores CSS, lo que permite una gran precisión a la hora de seleccionar elementos a los que aplicar estilo. En este artículo y sus subartículos veremos con detalle todos los tipos y el modo como funcionan.
-
-<li>Prerrequisitos:</li>   	
-Nociones básicas de informática, tener el software básico instalado, conocimientos básicos de trabajar con archivos, conocimientos básicos de HTML (véase Introducción a HTML) y una idea de cómo funciona el CSS (véase Primeros pasos con CSS).
-
- <li>Objetivo:</li>  	
-Aprender con detalle cómo funcionan los selectores CSS.
-
-<li>¿Qué es un selector?</li>   
-En un artículo anterior explicamos qué son los selectores. Un selector CSS es la primera parte de una regla CSS. Es un patrón de elementos y otros términos que indican al navegador qué elementos HTML se seleccionan para aplicarles una regla que incluye los valores de las propiedades CSS. El elemento o los elementos seleccionados por el selector se denominan sujeto del selector.
-
-En artículos anteriores ya has visto algunos selectores y has aprendido que hay diversas maneras de organizar el documento. Por ejemplo, seleccionando un elemento, como h1, o seleccionando una clase, como 
-.special.
-
-En CSS, los selectores se definen en la especificación de selectores de CSS correspondiente; al igual que cualquier otro elemento de CSS, es necesario que los navegadores los admitan para que funcionen. La mayoría de los selectores que encontrarás se definen en especificación de nivel 3 de selectores, que es una especificación consolidada y, por lo tanto, la mayoría de navegadores admitirán esos selectores.
-
-<li>Listas de selectores</li>   
-Si más de un elemento utiliza el mismo CSS, puedes combinar los selectores en una lista de selectores para que la regla se aplique a cada uno de los selectores individuales. Por ejemplo, si tengo el mismo CSS para un h1 y para una clase .special, los puedo escribir como dos reglas separadas.
-
-<li>h1 {
-    color: blue;
-  }</li>   
-
-<li>.special {
-    color: blue;
-  }</li> 
-
-También los podrías combinar en una lista de selectores, separándolos con una coma.
-
-<li>h1, .special {
-    color: blue;
-  }</li>   
-
-Es posible dejar un espacio en blanco tanto antes como después de la coma. Incluso puede resultar más legible si cada selector se encuentra en una línea distinta.
-
-<li>h1,
-    .special {
-      color: blue;
+    <li>h1 {
+        color: blue;
     }</li>   
 
-En el ejemplo siguiente, intenta combinar los dos selectores de modo que tengan la misma declaración. El aspecto visual debe permanecer igual tras la combinación.
+    <li>.special {
+        color: blue;
+    }</li> 
 
-Cuando agrupas los selectores de esta manera, si alguno de los selectores no es válido, el navegador sencillamente ignora toda la regla.
+    También los podrías combinar en una lista de selectores, separándolos con una coma.
 
-En el ejemplo siguiente, la regla que corresponde al selector de clase que no es válido se ignora, mientras que el estilo se aplica al elemento h1.
+    <li>h1, .special {
+        color: blue;
+    }</li>   
 
-<li>h1 {
-    color: blue;
-  }</li> 
+    Es posible dejar un espacio en blanco tanto antes como después de la coma. Incluso puede resultar más legible si cada selector se encuentra en una línea distinta.
 
-<li>..special {
-    color: blue;
-  }</li>
-     
+    <li>h1,
+        .special {
+        color: blue;
+        }</li>   
 
-Sin embargo, si se combinan, toda la regla se considera no válida y no se aplicará estilo ni a h1 ni a la clase.
+    En el ejemplo siguiente, intenta combinar los dos selectores de modo que tengan la misma declaración. El aspecto visual debe permanecer igual tras la combinación.
 
-<li>h1, ..special {
-    color: blue;
-  }</li>   
+    Cuando agrupas los selectores de esta manera, si alguno de los selectores no es válido, el navegador sencillamente ignora toda la regla.
 
-<li>Tipos de selectores</li>  
+    En el ejemplo siguiente, la regla que corresponde al selector de clase que no es válido se ignora, mientras que el estilo se aplica al elemento h1.
 
-Hay diferentes agrupaciones de selectores, y conocer qué tipo de selector necesitas te ayudará a encontrar la herramienta adecuada para tu trabajo. En estos subartículos vamos a ver los diferentes grupos de selectores con más detalle.
+    <li>h1 {
+        color: blue;
+    }</li> 
 
-<li>Selectores de tipo, de clase y de ID</li>  
+    <li>..special {
+        color: blue;
+    }</li>
+        
 
-Este grupo incluye selectores que delimitan un elemento HTML, como por ejemplo un h1.
+    Sin embargo, si se combinan, toda la regla se considera no válida y no se aplicará estilo ni a h1 ni a la clase.
 
-<li>h1 { }</li>  
+    <li>h1, ..special {
+        color: blue;
+    }</li>   
 
-También incluye selectores que delimitan una clase:
+    <li>Tipos de selectores</li>  
 
-<li>.box { }</li>  
+    Hay diferentes agrupaciones de selectores, y conocer qué tipo de selector necesitas te ayudará a encontrar la herramienta adecuada para tu trabajo. En estos subartículos vamos a ver los diferentes grupos de selectores con más detalle.
 
-o un ID:
+    <li>Selectores de tipo, de clase y de ID</li>  
 
-<li>#unique { }</li>   
+    Este grupo incluye selectores que delimitan un elemento HTML, como por ejemplo un h1.
 
-<li>Selectores de atributo</li>  
-Este grupo de selectores te proporciona diferentes formas de seleccionar elementos según la presencia de un atributo determinado en un elemento:
+    <li>h1 { }</li>  
 
-<li>a[title] { }</li>  
+    También incluye selectores que delimitan una clase:
 
-O incluso hacer una selección basada en la presencia de un atributo que tiene un valor particular asignado:
+    <li>.box { }</li>  
 
-<li>a[href="https://example.com"] { }</li>  
+    o un ID:
 
-<li>Las pseudoclases y los pseudoelementos</li>  
-Este grupo de selectores incluye pseudoclases, que aplican estilo a ciertos estados de un elemento. La pseudoclase :hover, por ejemplo, selecciona un elemento solo cuando se le pasa el ratón por encima.
+    <li>#unique { }</li>   
 
-<li>a: hover {}</li>   
+    <li>Selectores de atributo</li>  
+    Este grupo de selectores te proporciona diferentes formas de seleccionar elementos según la presencia de un atributo determinado en un elemento:
 
-También incluye pseudoelementos, que seleccionan una parte determinada de un elemento en vez del elemento en sí. Por ejemplo, ::first-line siempre selecciona la primera línea del texto que se encuentra dentro de un elemento (p, en el ejemplo siguiente), y actúa como si un elemento span hubiera delimitado la primera línea, seleccionado y aplicado estilo.
+    <li>a[title] { }</li>  
 
-<li>p::first-line { }</li>  
+    O incluso hacer una selección basada en la presencia de un atributo que tiene un valor particular asignado:
 
-<li>Combinadores</li>  
-El último grupo de selectores combina otros selectores con el fin de delimitar elementos de nuestros documentos. El ejemplo siguiente selecciona los párrafos que son hijos directos del elemento article utilizando el operador de combinación hijo (>):
+    <li>a[href="https://example.com"] { }</li>  
 
-<li>article > p { }</li>
-<p>Durango, A. (2015). Diseño Web con CSS: 2ª Edición. IT Campus Academy.</p>  
+    <li>Las pseudoclases y los pseudoelementos</li>  
+    Este grupo de selectores incluye pseudoclases, que aplican estilo a ciertos estados de un elemento. La pseudoclase :hover, por ejemplo, selecciona un elemento solo cuando se le pasa el ratón por encima.
 
-                    </p>
-                    <P>Tinoco, E. E. C., & Solís, I. S. (2014). Programación web con CSS, Javascript, PHP y AJAX. Iván Soria Solís.</P>
-        </section>
-    </main>
-    <hr>
-    <footer>
-       <p>Email: tangjanny02@gmail.com  <br>
-        skype:tangjanny02 <br>
-        fecha: septiembre 2021
-       </p>
-    </footer>
-    <H2>mi mockup</H2>
-    <img src="Imagen 1/mi mockup.png" alt="">
-   
-    <h2>fases del proyecto</h2>
-    <a href="FASE2/desing.html"></a>
-</body>
-</html>
+    <li>a: hover {}</li>   
+
+    También incluye pseudoelementos, que seleccionan una parte determinada de un elemento en vez del elemento en sí. Por ejemplo, ::first-line siempre selecciona la primera línea del texto que se encuentra dentro de un elemento (p, en el ejemplo siguiente), y actúa como si un elemento span hubiera delimitado la primera línea, seleccionado y aplicado estilo.
+
+    <li>p::first-line { }</li>  
+
+    <li>Combinadores</li>  
+    El último grupo de selectores combina otros selectores con el fin de delimitar elementos de nuestros documentos. El ejemplo siguiente selecciona los párrafos que son hijos directos del elemento article utilizando el operador de combinación hijo (>):
+
+    <li>article > p { }</li>
+    <p>Durango, A. (2015). Diseño Web con CSS: 2ª Edición. IT Campus Academy.</p>  
+
+                        </p>
+                        <P>Tinoco, E. E. C., & Solís, I. S. (2014). Programación web con CSS, Javascript, PHP y AJAX. Iván Soria Solís.</P>
+            </section>
+        </main>
+        <hr>
+        <footer>
+        <p>Email: tangjanny02@gmail.com  <br>
+            skype:tangjanny02 <br>
+            fecha: septiembre 2021
+        </p>
+        </footer>
+        <H2>mi mockup</H2>
+        <img src="Imagen 1/mi mockup.png" alt="">
+    
+        <h2>fases del proyecto</h2>
+        <a href=fase2/index.html">fase2</a>
+    </body>
+    </html>
