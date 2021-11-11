@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+    <body>
+        <header>
+            <h1>Sintaxis y Selectores CSS</h1>
+         </header>
+        <nav>
+            <div id-"heades">
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+            <ul>
+                <li><a href="tema1.html">Temas</a></li>
+                <ul>
+                    <li><a href="">Tema1</a></li>
+                    <li><a href="">Tema2</a></li> 
+                   
+            
+                </ul>
+            </ul>
+                    
+                    <li><a href="Recursos.html">Recursos</a></li>
+                    <li><a href="">Aprendizaje</a></li>
+                    <li><a href="">Acerca de</a></li>
+                </ul>
+            
+        </nav>
+        <main>
+            <section>
+                <article>
+                    <p>DESCRIPCION DE LA SINTAXIS CON LA QUE SE TRABAJA EN EL LENGUAJE HTML, ASI COMO LA ESCTRUCTURA QUE TENDRA EL DOCUMENTOTO BASICO HTML</p>
+                
+                </article>
+                <article>
+                    <p> TEMA 1
+                        
+                        El HTML es un "lenguaje de marcado". Basa su sintaxis en un elemento base al que llamamos marca, tag o simplemente etiqueta. A través de las etiquetas vamos definiendo los elementos del documento, como enlaces, párrafos, imágenes, etc. Así pues, un documento HTML estará constituido por texto y un conjunto de etiquetas para definir la función que juega cada contenido dentro de la página. Todo eso servirá al navegador para saber cómo se tendrá que presentar el texto y otros elementos en la página.
+
+                        Existen etiquetas para crear negritas, párrafos, imágenes, tablas, listas, enlaces, etc. Así pues, aprender HTML es básicamente aprenderse una serie de etiquetas, sus funciones, sus usos y saber un poco sobre cómo debe de construirse un documento básico. Es una tarea muy sencilla de afrontar, al alcance de cualquier personas, puesto que el lenguaje es muy entendible por los seres humanos.
+                        
+                        Anatomía de una etiqueta HTML
+                        La etiqueta presenta frecuentemente dos partes, su apertura y cierre, y se encierran ambas partes entre símbolos "menor que" y "mayor que". Lo veremos a continuación.
+                        
+                        Apertura
+                        El inicio de una etiqueta se produce de la siguiente manera:
+                        
+                        <etiqueta>
+                        Cierre
+                        El final de una etiqueta se produce de manera similar a su apertura, aunque agregando una barra:
+                        
+                        </etiqueta>
+                        Nota: Por razones de formato del texto, en DesarrolloWeb.com, cuando no estamos escribiendo un código y queremos referirnos a una etiqueta la escribimos con mayúsculas. Los códigos se diferencian fácilmente porque tienen su estilo particular. Donde escribimos las etiquetas sin los mayores y menores que y con mayúsculas es en los párrafos del texto.
+                        Todo lo incluido en el interior de esa etiqueta sufrirá las modificaciones que caracterizan a esta etiqueta. Así por ejemplo:
+                        
+                        La etiqueta B define un texto en negrita. Si en nuestro documento HTML escribimos una frase con el siguiente código:
+                        
+                        <b>Esto esta en negrita</b>
+                        Veremos que las palabras "Esto esta en negrita" aparecen en negrita. Es así de simple.
+                        
+                        Otro ejemplo rápido. La etiqueta P define un párrafo. Si en nuestro documento HTML escribimos:
+                        
+                        <p>Hola, estamos en el párrafo 1</p> 
+                        <p>Ahora hemos cambiado de párrafo</p>
+                        Como resultado obtendríamos dos párrafos con esos textos. En HTML los párrafos están separados por un doble salto de línea. Se verían más o menos de esta manera:
+                        
+                        
+                        
+                        Partes de un documento HTML
+                        Además de todo esto, un documento HTML ha de estar delimitado por la etiqueta HTML. Dentro de este documento, podemos asimismo distinguir dos partes principales:
+                        
+                        La cabecera, delimitada por la etiqueta HEAD, donde colocaremos etiquetas de índole informativo, como por ejemplo el titulo de nuestra página. El contenido de la cabecera no suele aparecer en el cuerpo de la página, pero sirve a los navegadores y otros sistemas para encontrar información útil para entender y procesar el documento.
+                        
+                        El cuerpo, flanqueado por la etiqueta BODY, que será donde colocaremos nuestro texto e imágenes delimitados a su vez por otras etiquetas como las que hemos visto.
+                        
+                        El resultado de un documento básico tiene la siguiente estructura:
+                        
+                        <html>
+                        <head>
+                          <title>Mi documento básico</title>
+                        </head>
+                        <body>
+                        
+                          <p>Este es el cuerpo de mi primera página HTML</p>
+                          <p>Este segundo párrafo también forma parte del cuerpo</p>
+                        
+                        </body>
+                        </html>
+                        Nota: A este documento básico le faltan todavía algunas cosas importantes que no queremos que nunca se te olviden. Sin embargo hablaremos de ellas en el siguiente artículo, dedicado a la página HTML básica.
+                        Las mayúsculas o minúsculas son indiferentes al escribir etiquetas
+                        En HTML las mayúsculas y minúsculas son indiferentes. Quiere decir que las etiquetas pueden ser escritas con cualquier tipo de combinación de mayúsculas y minúsculas. Resulta sin embargo aconsejable acostumbrarse a escribirlas en minúscula ya que otras tecnologías que pueden convivir con nuestro HTML (XML por ejemplo) no son tan permisivas y nunca viene mal hacernos a las buenas costumbres desde el principio, para evitar fallos triviales en un futuro.
+                        
+                        Saltos de línea en HTML
+                        Otra de las cosas importantes de conocer sobre la sintaxis básica del HTML es que los saltos de línea no importan a la hora de interpretar una página. Un salto de línea será simplemente interpretado como un separador de palabras, un espacio en blanco. Es por ello que para separar líneas necesitamos usar la etiqueta de párrafo comentada antes, o la etiqueta BR que significa un salto de línea simple.
+                        
+                        Esto es una línea
+                        <br>
+                        Esto es otra línea
+                        Ahora, aunque estoy escribiendo aparentemente en otra línea, no se verá el salto de línea porque no lo he separado por el BR (o P, o cualquier otra etiqueta que produzca el salto de línea
+                        Nota: La etiqueta BR no tiene su correspondiente cierre. Es un detalle que quizás te haya llamado la atención. Volveremos sobre ello más adelante.
+                        Es un detalle que choca al principio de usar HTML, pero al que te acabas acostumbrando con rapidez. Iremos viendo ejemplos a lo largo de todo el Manual de HTML, por lo que no debes preocuparte por ahora, sólo seguir leyendo.
+                        </p>
+    
+                </article>
+            </section>
+            <aside><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidad-Nacional-Abierta-y-a-Distancia-UNAD-CCAV-Sahag%25C3%25BAn-103912416372639%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=483303285352986" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></aside>
+        </main>
+        <footer>By Tang Janny   Ingenieria de sistemas   Universidad Nacional Abierta y a distancia</footer>
+    </body>
+</html>

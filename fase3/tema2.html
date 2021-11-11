@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Principal</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+    <body>
+        <header>
+            <h1>Sintaxis y Selectores CSS</h1>
+         </header>
+        <nav>
+            <div id-"heades">
+                <ul class="nav">
+                    <li><a href="index.html">Inicio</a></li>
+            <ul>
+                <li><a href="tema1.html">Temas</a></li>
+                <ul>
+                    <li><a href="">Tema1</a></li>
+                    <li><a href="">Tema2</a></li> 
+                   
+            
+                </ul>
+            </ul>
+                    
+                    <li><a href="Recursos.html">Recursos</a></li>
+                    <li><a href="">Aprendizaje</a></li>
+                    <li><a href="">Acerca de</a></li>
+                </ul>
+            
+        </nav>
+        <main>
+            <section>
+                <article>
+                    <p>TEMA 2
+                        
+                        GUIA DE SELECTORES CSS</p>
+                
+                </article>
+                <article>
+                    <p>
+                    
+                        El selector es la parte de la regla CSS que indica a qué elemento o parte de una página se le aplica un determinado estilo.
+                        
+                        Etiquetas
+                        Se utilizan las propias etiquetas html como selectores. Ejemplo:
+                        
+                        Selector { atributo : valor }
+                        head>
+                            title> Ejemplo /title>
+                            style>
+                                h1, h2 { color : red; background-color: blue } //Con la “,” agrupamos dos etiquetas
+                                p { color: green }
+                            /style>
+                        /head>
+                        Clases
+                        Las etiquetas html pueden pertenecer a una clase o varias. Ejemplo:
+                        
+                        //HTML
+                            h1 class=alerta”> Texto de h1 /h1>
+                            h2 class=”alerta”> Texto de h1 >/h1>
+                            p class=”alerta parrafo” > Texto de p con dos clases /p>
+                        //CSS
+                        .alerta { color: red; } 
+                        h1.alerta { color: red; } //Hace referencia a los H1 de clase “alerta”
+                        IDs
+                        El ID de un documento html debe ser único. Ejemplo:
+                        
+                        div id="unico">
+                        #unico {color:blue} //Nos referimos a la etiqueta con id="unico"
+                        Descendencia
+                        Aplicando un estilo a los elementos ‘p’ de una clase, si estos elementos se encuentran entre las llaves de apertura y cierre del otro elemento:
+                        
+                        .nombredelaclase p { background-color: red; font-size: 14px; }
+                        Aplicando un estilo a los elementos ‘p’ de un id:
+                        
+                        #nombredelaclase p { background-color: red; font-size: 14px; }
+                        Parentesco
+                        Se consigue aplicando un estilo a los hijos directos ‘p’ de una clase, se indica con la llave de apertura mayor que:
+                        
+                        .nombredelaclase > p { background-color: red; font-size: 14px; }
+                        Adyacente
+                        Se aplica un estilo cuando el primer y segundo elemento comparten un mismo padre e inmediatamente al primer elemento le precede el segundo:
+                    
+                        p + span { background-color: red; font-size: 14px; }
+                        Hermanos
+                        Se aplica un estilo solo si el primer y segundo elemento comparten un padre en común y si el segundo elemento va precedido por el primero:
+                        
+                        p ~ span { background-color: red; font-size: 14px; }
+                        Atributos
+                        Podemos seleccionar un elemento por su atributo. Hay cuatro selectores de atributo:
+                        
+                        [nombre_atributo] ==> Selecciona los elementos que tienen establecido el atributo llamado nombre_atributo, independientemente de su valor.
+                        [nombre_atributo = valor]  ==> Selecciona los elementos que tienen establecido un atributo llamado nombre_atributo con un valor igual a valor.
+                        [nombre_atributo ∼= valor]  ==> Selecciona los elementos que tienen establecido un atributo llamado nombre_atributo y al menos uno de los valores del atributo es valor.
+                        [nombre_atributo |= valor]  ==> Selecciona los elementos que tienen establecido un atributo llamado nombre_atributo y cuyo valor es una serie de palabras separadas con guiones, pero que comienza con valor. Este tipo de selector sólo es útil para los atributos de tipo lang que indican el idioma del contenido del elemento.
+                        Pseudo-clases
+                        Se utilizan para seleccionar estados de un elemento:
+                        
+                        :link ==> Se aplica a un link a> que no ha sido visitado.
+                        :visited ==> Se aplica a un link a> visitado.
+                        :hover ==> Cuando el ratón pasa por encima de un elemento se activa. (No tiene por qué ser un a>)
+                        :active ==> Cuando el elemento se activa al pulsar click, por ejemplo.
+                        :focus ==> En caso de formulario, cuando el elemento tiene el foco (el cursor).
+                        :checked ==> Selecciona el checkbox que está marcado.
+                        :nth-child(n) ==> Selecciona el hijo n del elemento. Admite expresiones complejas como:
+                        li:nth-child(2n+1) //Selecciona los li impares
+                        p:nth-child(2n) //Selecciona los p pares
+                        p:nth-child(4n+1) //Alternan 4 estilos diferentes para los párrafos.
+                        p:nth-child(4n+2) //El primero es el 2 y luego de 2 en 2.
+                        p:nth-child(4n+3) //El primero es el 3 y luego de 4 en 4.
+                        p:nth-child(4n+4) //El primero es el 4 y luego de 4 en 4.
+                        li:nth-of-type(2) ==> Selecciona el segundo li
+                        p:first-child ==> Selecciona el primer p hijo del elemento padre.
+                        p:last-child ==> Selecciona el último p hijo del elemento padre.
+                        p:only-child ==> Selecciona el único p hijo del elemento padre.
+                        Pseudo-elementos
+                        p::first-line ==> Selecciona la primera línea del p.
+                        p::first-letter ==> Selecciona la primera letra del p.
+                        p::before ==> Genera contenido antes del elemento. Ejemplo:
+                        p::before {content:'Contenido a añadir';color:red}	
+                        h1>Hola/h1>
+                        h1::before { 
+                            content: url(smiley.gif); 
+                        } 		
+                        //Se ve una carita antes del texto “Hola”
+                        p::after ==> Genera contenido después del elemento. Ejemplo:
+                        p::after {content:'Contenido a añadir';color:red}
+                        p::selection ==> La selección que el usuario hace con el ratón de un p.
+                        </p>
+    
+                </article>
+            </section>
+            <aside><iframe src="https://www.facebook.com/plugins/page.php?href=https%3A%2F%2Fwww.facebook.com%2FUniversidad-Nacional-Abierta-y-a-Distancia-UNAD-CCAV-Sahag%25C3%25BAn-103912416372639%2F&tabs=timeline&width=340&height=500&small_header=false&adapt_container_width=true&hide_cover=false&show_facepile=true&appId=483303285352986" width="340" height="500" style="border:none;overflow:hidden" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"></iframe></aside>
+        </main>
+        <footer>By Tang Janny   Ingenieria de sistemas   Universidad Nacional Abierta y a distancia</footer>
+    </body>
+</html>
